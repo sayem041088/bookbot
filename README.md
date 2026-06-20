@@ -6,8 +6,8 @@ BookBot is a Python project designed to analyze a corpus of books. Currently, it
 
 ## Features
 
-*   **Word Count:** Calculates the total number of words in a given book.
-*   **Character Frequency:** Determines the frequency of each character in the text.
+*   **Character Frequency:** Determines the frequency of each alphabetic character in the text, case-insensitively.
+*   **Word Count:** Calculates the total number of words in a given book (accessible via the `stats.py` module).
 *   **Book Processing:** Reads and processes text files from the `books/` directory.
 
 ## How to Run
@@ -20,11 +20,15 @@ To run BookBot, ensure you have Python installed.
     cd bookbot
     ```
 
-2.  **Run the main script:**
+2.  **Run the main script with a book path:**
     ```bash
-    python main.py
+    python3 main.py <path_to_book>
     ```
-    This will process the books and print the analysis to the console.
+    For example, to analyze `frankenstein.txt`:
+    ```bash
+    python3 main.py books/frankenstein.txt
+    ```
+    This will process the specified book and print the character frequency analysis to the console.
 
 ## Technologies Used
 

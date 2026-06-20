@@ -1,3 +1,8 @@
+"""A command-line tool for analyzing text files.
+
+This script processes a given book file to perform character frequency analysis.
+It takes the path to a book file as a command-line argument.
+"""
 import sys
 from stats import get_num_words,get_char_count
 if __name__ == "__main__":
